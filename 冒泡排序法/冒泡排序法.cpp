@@ -6,6 +6,7 @@ int bubbleSort(int a[], int N) {
 	for (int i = 0; flag; i++) {
 		flag = 0;
 		for (int j = N - 1; j >= i + 1; j--) {
+			//大于为降序，小于为升序。
 			if (a[j] < a[j - 1]) {
 				//交换相邻元素
 				swap(a[j], a[j - 1]);
